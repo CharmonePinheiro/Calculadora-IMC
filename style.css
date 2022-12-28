@@ -32,12 +32,15 @@ main{
 }
 
 .result{
-    background-color: black;
     
+    display: flex;
+    background-color: black;
     height: 40%;
     width: 100%;
     border: 1px solid;
     color: yellow;
+    align-items: center;
+    justify-content: center;
     
 }
 
