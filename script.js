@@ -18,19 +18,32 @@ if( nome !=="" && altura !== "" && peso !== "" ){
 
 
     const valorIMC=(peso/(altura*altura)).toFixed(1);
-    resultado.textContent=valorIMC;
+    
 
     // Classificação imc//
 
     let classificação="";
 
     if (valorIMC<18.5){
-        classificação="abaixo do peso."
-
-        resultado.textContent =`${nome} seu IMC é ${valorIMC} e voçê esta ${classificação}`; 
-
+        classificação="abaixo do peso.";
+    }else if (valorIMC <25){
+        classificação="com peso ideal.";
+    }else if (valorIMC <30){
+        classificação="esta levemente acima do peso.";
+    }else if( valorIMC<35){
+        classificação="com obesidade grau I";
+    }else if (valorIMC<40){classificação="com obesidade grau II";
+    }else{
+        classificação="obesidade grau III";
     }
+        
     
+
+    resultado.textContent =`${nome} seu IMC é ${valorIMC} e voçê esta ${classificação}`; 
+
+
+    
+
 }else{
     resultado.textContent ="Preencha todos os campos !!!";
 }
