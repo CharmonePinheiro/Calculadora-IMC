@@ -12,11 +12,11 @@ const resultado =document.getElementById("resultado");
 // Validação se os campos estão preenchidos//
 
 if( nome !=="" && altura !== "" && peso !== "" ){
-    alert("Valor Preenchido!")
-    
+   
+    // Calculo do imc //
     
 }else{
-    resultado.textContent ="Preencha todos os campos"
+    resultado.textContent ="Preencha todos os campos !!!";
 }
 
 
