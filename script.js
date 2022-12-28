@@ -19,6 +19,10 @@ if( nome !=="" && altura !== "" && peso !== "" ){
 
     const valorIMC=(peso/(altura*altura)).toFixed(1);
     resultado.textContent=valorIMC;
+
+    // Classificação imc//
+
+    let classificação=""/
     
 }else{
     resultado.textContent ="Preencha todos os campos !!!";
