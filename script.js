@@ -13,7 +13,12 @@ const resultado =document.getElementById("resultado");
 
 if( nome !=="" && altura !== "" && peso !== "" ){
    
-    // Calculo do imc //
+    // Calculo do imc  É calculado dividindo o peso (em kg) pela altura ao quadrado (em metros) //
+          
+
+
+    const valorIMC=(peso/(altura*altura)).toFixed(1);
+    resultado.textContent=valorIMC;
     
 }else{
     resultado.textContent ="Preencha todos os campos !!!";
