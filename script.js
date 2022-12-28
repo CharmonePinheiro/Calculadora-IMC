@@ -11,9 +11,12 @@ const resultado =document.getElementById("resultado");
 
 // Validação se os campos estão preenchidos//
 
-if( ){
+if( nome !=="" && altura !== "" && peso !== "" ){
+    alert("Valor Preenchido!")
     
     
+}else{
+    resultado.textContent ="Preencha todos os campos"
 }
 
 
