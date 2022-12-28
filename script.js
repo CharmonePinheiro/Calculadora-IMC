@@ -22,7 +22,14 @@ if( nome !=="" && altura !== "" && peso !== "" ){
 
     // Classificação imc//
 
-    let classificação=""/
+    let classificação="";
+
+    if (valorIMC<18.5){
+        classificação="abaixo do peso."
+
+        resultado.textContent =`${nome} seu IMC é ${valorIMC} e voçê esta ${classificação}`; 
+
+    }
     
 }else{
     resultado.textContent ="Preencha todos os campos !!!";
